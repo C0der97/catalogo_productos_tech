@@ -13,6 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
             '*',
+            'https://front-tech-products--2.fly.dev/'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
