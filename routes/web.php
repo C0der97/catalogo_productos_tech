@@ -13,5 +13,5 @@ Route::get('/', function () {
 
 
 
-Route::apiResource('categories', CategoryController::class);
-Route::apiResource('products', ProductController::class);
+Route::apiResource('/api/categories', CategoryController::class);
+Route::apiResource('/api/products', ProductController::class);
